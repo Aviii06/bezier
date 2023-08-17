@@ -1,0 +1,54 @@
+<html>
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<!-- BODY -->
+
+<body>
+  <main>
+    <div class="complete-container">
+      <nav class="navbar navbar-dark bg-dark" role="tablist">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Bezier</a>
+        </div>
+      </nav>
+      <div id="container">
+        <div id="bezier-canvas">
+          <script src="bezier.js"></script>
+        </div>
+        <div id="toolkit">
+          <div class="row">
+            <div class="col">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Number of points</span>
+                <input type="number" placeholder="Number of points" aria-label="Number of points"
+                    id="numPoints" value="4" step="1" disabled="disabled" />
+                <input type="button" value="+" onclick="addPoint()" />
+                <input type="button" value="-" onclick="removePoint()" />
+              </div>
+            </div>
+            <div class="col">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Number of points per curve</span>
+                <input type="number" placeholder="points per curve"
+                  aria-label="Number of points per curve" aria-describedby="basic-addon1" id="numberOfPointsPerCurve"
+                  value="1000" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
